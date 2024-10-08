@@ -1,0 +1,188 @@
+2024-07-16T05:53:38.0709866Z ##[section]Starting: Initialize job
+2024-07-16T05:53:38.0713355Z Agent name: 'Hosted Agent'
+2024-07-16T05:53:38.0713808Z Agent machine name: 'fv-az773-494'
+2024-07-16T05:53:38.0714008Z Current agent version: '3.241.0'
+2024-07-16T05:53:38.0756849Z ##[group]Operating System
+2024-07-16T05:53:38.0757124Z Microsoft Windows Server 2019
+2024-07-16T05:53:38.0757279Z 10.0.17763
+2024-07-16T05:53:38.0757425Z Datacenter
+2024-07-16T05:53:38.0757568Z ##[endgroup]
+2024-07-16T05:53:38.0757727Z ##[group]Runner Image
+2024-07-16T05:53:38.0757906Z Image: windows-2019
+2024-07-16T05:53:38.0758062Z Version: 20240707.1.0
+2024-07-16T05:53:38.0758365Z Included Software: https://github.com/actions/runner-images/blob/win19/20240707.1/images/windows/Windows2019-Readme.md
+2024-07-16T05:53:38.0758737Z Image Release: https://github.com/actions/runner-images/releases/tag/win19%2F20240707.1
+2024-07-16T05:53:38.0758987Z ##[endgroup]
+2024-07-16T05:53:38.0759159Z ##[group]Runner Image Provisioner
+2024-07-16T05:53:38.0759481Z 2.0.370.1
+2024-07-16T05:53:38.0759643Z ##[endgroup]
+2024-07-16T05:53:38.0760525Z Current image version: '20240707.1.0'
+2024-07-16T05:53:38.0767952Z Agent running as: 'VssAdministrator'
+2024-07-16T05:53:38.0777388Z Prepare release directory.
+2024-07-16T05:53:38.0784676Z ReleaseId=87, TeamProjectId=d43e37cb-381f-48f0-840e-d3841a7542c6, ReleaseDefinitionName=New release pipeline
+2024-07-16T05:53:38.0838842Z Release folder: D:\a\r1\a
+2024-07-16T05:53:38.0899684Z Environment variables available are below.  Note that these environment variables can be referred to in the task (in the ReleaseDefinition) by replacing "_" with "." e.g. AGENT_NAME environment variable can be referenced using Agent.Name in the ReleaseDefinition: 
+				[AGENT_CLOUDID] --> [bd61e315-0bf1-4ad0-b736-d38ccc0ab49d]
+				[AGENT_DISABLELOGPLUGIN_TESTFILEPUBLISHERPLUGIN] --> [true]
+				[AGENT_DISABLELOGPLUGIN_TESTRESULTLOGPLUGIN] --> [true]
+				[AGENT_HOMEDIRECTORY] --> [C:\agents\3.241.0]
+				[AGENT_ID] --> [8]
+				[AGENT_ISSELFHOSTED] --> [0]
+				[AGENT_JOBNAME] --> [Agent job]
+				[AGENT_MACHINENAME] --> [fv-az773-494]
+				[AGENT_NAME] --> [Hosted Agent]
+				[AGENT_OS] --> [Windows_NT]
+				[AGENT_OSARCHITECTURE] --> [X64]
+				[AGENT_RELEASEDIRECTORY] --> [D:\a\r1\a]
+				[AGENT_RETAINDEFAULTENCODING] --> [false]
+				[AGENT_ROOTDIRECTORY] --> [D:\a]
+				[AGENT_SERVEROMDIRECTORY] --> [C:\agents\3.241.0\externals\vstsom]
+				[AGENT_TASKRESTRICTIONSENFORCEMENTMODE] --> [Enabled]
+				[AGENT_TEMPDIRECTORY] --> [D:\a\_temp]
+				[AGENT_TOOLSDIRECTORY] --> [C:\hostedtoolcache\windows]
+				[AGENT_VERSION] --> [3.241.0]
+				[AGENT_WORKFOLDER] --> [D:\a]
+				[AGENT_ENABLE_PIPELINEARTIFACT_LARGE_CHUNK_SIZE] --> [true]
+				[AZP_75787_ENABLE_COLLECT] --> [true]
+				[AZP_75787_ENABLE_NEW_LOGIC] --> [false]
+				[AZP_75787_ENABLE_NEW_LOGIC_LOG] --> [false]
+				[AZP_75787_ENABLE_NEW_PH_LOGIC] --> [true]
+				[AZP_AGENT_CHECK_FOR_TASK_DEPRECATION] --> [true]
+				[AZP_AGENT_LOG_TASKNAME_IN_USERAGENT] --> [true]
+				[AZP_AGENT_MOUNT_WORKSPACE] --> [false]
+				[AZP_PS_ENABLE_INVOKE_PROCESS] --> [true]
+				[AZURE_HTTP_USER_AGENT] --> [VSTS_8ea88e02-6c74-482d-b0ad-8d69f076433a_Release__87_104_1]
+				[BUILD_BUILDID] --> [a8a10c355a0ac732686997953a128fd536adcf95]
+				[BUILD_BUILDNUMBER] --> [a8a10c35]
+				[BUILD_DEFINITIONID] --> [205e5f47-2cb0-4394-9ba5-d57af0cd56d2]
+				[BUILD_DEFINITIONNAME] --> [10-MicroService-Appliction.git]
+				[BUILD_DEFINTIONID] --> [205e5f47-2cb0-4394-9ba5-d57af0cd56d2]
+				[BUILD_PROJECTID] --> [d43e37cb-381f-48f0-840e-d3841a7542c6]
+				[BUILD_PROJECTNAME] --> [hrs]
+				[BUILD_REPOSITORY_ID] --> [205e5f47-2cb0-4394-9ba5-d57af0cd56d2]
+				[BUILD_REPOSITORY_NAME] --> [10-MicroService-Appliction.git]
+				[BUILD_REPOSITORY_PROVIDER] --> [Git]
+				[BUILD_REPOSITORY_URI] --> [https://VJAVanga@dev.azure.com/VJAVanga/hrs/_git/10-MicroService-Appliction.git]
+				[BUILD_SOURCEBRANCH] --> [main]
+				[BUILD_SOURCEVERSION] --> [a8a10c355a0ac732686997953a128fd536adcf95]
+				[BUILD_TYPE] --> [Git]
+				[DISTRIBUTEDTASK_AGENT_AGENTENABLEPIPELINEARTIFACTLARGECHUNKSIZE] --> [True]
+				[DISTRIBUTEDTASK_AGENT_CLEANUPPSMODULESINPOWERSHELL] --> [False]
+				[DISTRIBUTEDTASK_AGENT_ENABLERESOURCEUTILIZATIONWARNINGS] --> [False]
+				[DISTRIBUTEDTASK_AGENT_FAILDEPRECATEDTASK] --> [True]
+				[DISTRIBUTEDTASK_AGENT_LOGTASKNAMEINUSERAGENT] --> [True]
+				[DISTRIBUTEDTASK_AGENT_LOGTOBLOBSTORAGESERVICE] --> [False]
+				[DISTRIBUTEDTASK_AGENT_USEGITLONGPATHS] --> [True]
+				[DISTRIBUTEDTASK_AGENT_USEINTEROPTOFINDPARENTPROCESS] --> [False]
+				[DISTRIBUTEDTASK_AGENT_USELATESTGITVERSION] --> [True]
+				[DISTRIBUTEDTASK_AGENT_USEMSALLIBRARY] --> [True]
+				[DISTRIBUTEDTASK_AGENT_USEMSDEPLOYTOKENAUTH] --> [True]
+				[FAIL_DEPRECATED_TASK] --> [true]
+				[GIT_TERMINAL_PROMPT] --> [0]
+				[MSDEPLOY_HTTP_USER_AGENT] --> [VSTS_8ea88e02-6c74-482d-b0ad-8d69f076433a_Release__87_104_1]
+				[RELEASE_ARTIFACTS__10-MICROSERVICE-APPLICTION_GIT_BUILDID] --> [a8a10c355a0ac732686997953a128fd536adcf95]
+				[RELEASE_ARTIFACTS__10-MICROSERVICE-APPLICTION_GIT_BUILDNUMBER] --> [a8a10c35]
+				[RELEASE_ARTIFACTS__10-MICROSERVICE-APPLICTION_GIT_DEFINITIONID] --> [205e5f47-2cb0-4394-9ba5-d57af0cd56d2]
+				[RELEASE_ARTIFACTS__10-MICROSERVICE-APPLICTION_GIT_DEFINITIONNAME] --> [10-MicroService-Appliction.git]
+				[RELEASE_ARTIFACTS__10-MICROSERVICE-APPLICTION_GIT_DEFINTIONID] --> [205e5f47-2cb0-4394-9ba5-d57af0cd56d2]
+				[RELEASE_ARTIFACTS__10-MICROSERVICE-APPLICTION_GIT_PROJECTID] --> [d43e37cb-381f-48f0-840e-d3841a7542c6]
+				[RELEASE_ARTIFACTS__10-MICROSERVICE-APPLICTION_GIT_PROJECTNAME] --> [hrs]
+				[RELEASE_ARTIFACTS__10-MICROSERVICE-APPLICTION_GIT_REPOSITORY_ID] --> [205e5f47-2cb0-4394-9ba5-d57af0cd56d2]
+				[RELEASE_ARTIFACTS__10-MICROSERVICE-APPLICTION_GIT_REPOSITORY_NAME] --> [10-MicroService-Appliction.git]
+				[RELEASE_ARTIFACTS__10-MICROSERVICE-APPLICTION_GIT_REPOSITORY_PROVIDER] --> [Git]
+				[RELEASE_ARTIFACTS__10-MICROSERVICE-APPLICTION_GIT_REPOSITORY_URI] --> [https://VJAVanga@dev.azure.com/VJAVanga/hrs/_git/10-MicroService-Appliction.git]
+				[RELEASE_ARTIFACTS__10-MICROSERVICE-APPLICTION_GIT_SOURCEBRANCH] --> [main]
+				[RELEASE_ARTIFACTS__10-MICROSERVICE-APPLICTION_GIT_SOURCEVERSION] --> [a8a10c355a0ac732686997953a128fd536adcf95]
+				[RELEASE_ARTIFACTS__10-MICROSERVICE-APPLICTION_GIT_TYPE] --> [Git]
+				[RELEASE_ATTEMPTNUMBER] --> [1]
+				[RELEASE_DEFINITIONENVIRONMENTID] --> [23]
+				[RELEASE_DEFINITIONID] --> [12]
+				[RELEASE_DEFINITIONNAME] --> [New release pipeline]
+				[RELEASE_DEFINITIONSNAPSHOTREVISION] --> []
+				[RELEASE_DEPLOYMENT_REQUESTEDFOR] --> [sivavanga21]
+				[RELEASE_DEPLOYMENT_REQUESTEDFOREMAIL] --> [sivavanga21@gmail.com]
+				[RELEASE_DEPLOYMENT_REQUESTEDFORID] --> [d3139cc9-f71a-6cf6-8b93-075b85de8799]
+				[RELEASE_DEPLOYMENT_STARTTIME] --> [2024-07-16 05:53:20Z]
+				[RELEASE_DEPLOYMENTID] --> [130]
+				[RELEASE_DEPLOYPHASEID] --> [130]
+				[RELEASE_ENVIRONMENTID] --> [104]
+				[RELEASE_ENVIRONMENTNAME] --> [Deployment of k8]
+				[RELEASE_ENVIRONMENTPROTECTEDTENANTS] --> []
+				[RELEASE_ENVIRONMENTS_DEPLOYMENT_OF_K8_STATUS] --> [InProgress]
+				[RELEASE_ENVIRONMENTURI] --> [vstfs:///ReleaseManagement/Environment/104]
+				[RELEASE_PRIMARYARTIFACTSOURCEALIAS] --> [_10-MicroService-Appliction.git]
+				[RELEASE_REASON] --> [Manual]
+				[RELEASE_RELEASEDESCRIPTION] --> []
+				[RELEASE_RELEASEID] --> [87]
+				[RELEASE_RELEASENAME] --> [Release-1]
+				[RELEASE_RELEASEURI] --> [vstfs:///ReleaseManagement/Release/87]
+				[RELEASE_RELEASEWEBURL] --> [https://dev.azure.com/VJAVanga/d43e37cb-381f-48f0-840e-d3841a7542c6/_release?releaseId=87&_a=release-summary]
+				[RELEASE_REQUESTEDFOR] --> [sivavanga21]
+				[RELEASE_REQUESTEDFOREMAIL] --> [sivavanga21@gmail.com]
+				[RELEASE_REQUESTEDFORID] --> [d3139cc9-f71a-6cf6-8b93-075b85de8799]
+				[RELEASE_SKIPARTIFACTSDOWNLOAD] --> [False]
+				[RELEASE_TRIGGERINGARTIFACT_ALIAS] --> []
+				[REQUESTEDFORID] --> [d3139cc9-f71a-6cf6-8b93-075b85de8799]
+				[SYSTEM] --> [release]
+				[SYSTEM_ARTIFACTSDIRECTORY] --> [D:\a\r1\a]
+				[SYSTEM_COLLECTIONID] --> [8ea88e02-6c74-482d-b0ad-8d69f076433a]
+				[SYSTEM_COLLECTIONURI] --> [https://vsrm.dev.azure.com/VJAVanga/]
+				[SYSTEM_CULTURE] --> [en-US]
+				[SYSTEM_DEFAULTWORKINGDIRECTORY] --> [D:\a\r1\a]
+				[SYSTEM_DEFINITIONID] --> [12]
+				[SYSTEM_DEFINITIONNAME] --> [New release pipeline]
+				[SYSTEM_ENABLEACCESSTOKEN] --> [False]
+				[SYSTEM_HOSTTYPE] --> [release]
+				[SYSTEM_ISAZUREVM] --> [1]
+				[SYSTEM_ISDOCKERCONTAINER] --> [0]
+				[SYSTEM_ISSCHEDULED] --> [False]
+				[SYSTEM_JOBATTEMPT] --> [1]
+				[SYSTEM_JOBDISPLAYNAME] --> [Agent job]
+				[SYSTEM_JOBID] --> [2b2130d5-eef0-593e-2890-cae70a7f2bf7]
+				[SYSTEM_JOBIDENTIFIER] --> [Stage_d43e37cb381f48f0840ed3841a7542c6_23_1.Phase_1.__default]
+				[SYSTEM_JOBNAME] --> [__default]
+				[SYSTEM_JOBPARALLELISMTAG] --> [Private]
+				[SYSTEM_JOBPOSITIONINPHASE] --> [1]
+				[SYSTEM_JOBTIMEOUT] --> [0]
+				[SYSTEM_OIDCREQUESTURI] --> [https://vsrm.dev.azure.com/VJAVanga/d43e37cb-381f-48f0-840e-d3841a7542c6/_apis/distributedtask/hubs/release/plans/d52af356-ce8a-4d67-971f-e0bdae3fda86/jobs/2b2130d5-eef0-593e-2890-cae70a7f2bf7/oidctoken]
+				[SYSTEM_PHASEATTEMPT] --> [1]
+				[SYSTEM_PHASEDISPLAYNAME] --> [Agent job]
+				[SYSTEM_PHASEID] --> [73f9bac0-74f4-555a-a992-04aba92a2aab]
+				[SYSTEM_PHASENAME] --> [Phase_1]
+				[SYSTEM_PIPELINESTARTTIME] --> [2024-07-16 01:53:34-04:00]
+				[SYSTEM_PLANID] --> [d52af356-ce8a-4d67-971f-e0bdae3fda86]
+				[SYSTEM_PREFERREDIRECTGETCONTAINERITEM] --> [true]
+				[SYSTEM_SERVERTYPE] --> [Hosted]
+				[SYSTEM_STAGEATTEMPT] --> [1]
+				[SYSTEM_STAGEDISPLAYNAME] --> [Deployment of k8]
+				[SYSTEM_STAGEID] --> [fca98bb9-109a-59fb-e70c-013798974cbf]
+				[SYSTEM_STAGENAME] --> [Stage_d43e37cb381f48f0840ed3841a7542c6_23_1]
+				[SYSTEM_TASKDEFINITIONSURI] --> [https://dev.azure.com/VJAVanga/]
+				[SYSTEM_TEAMFOUNDATIONCOLLECTIONURI] --> [https://dev.azure.com/VJAVanga/]
+				[SYSTEM_TEAMFOUNDATIONSERVERURI] --> [https://vsrm.dev.azure.com/VJAVanga/]
+				[SYSTEM_TEAMPROJECT] --> [hrs]
+				[SYSTEM_TEAMPROJECTID] --> [d43e37cb-381f-48f0-840e-d3841a7542c6]
+				[SYSTEM_TIMELINEID] --> [d52af356-ce8a-4d67-971f-e0bdae3fda86]
+				[SYSTEM_TOTALJOBSINPHASE] --> [1]
+				[SYSTEM_WORKFOLDER] --> [D:\a]
+				[USE_GIT_LONG_PATHS] --> [true]
+				[USE_LATEST_GIT_VERSION] --> [true]
+				[USE_MSAL] --> [true]
+				[USE_MSDEPLOY_TOKEN_AUTH] --> [true]
+2024-07-16T05:53:38.2878687Z Download all required tasks.
+2024-07-16T05:53:38.3087366Z Downloading task: Kubernetes (1.241.5)
+2024-07-16T05:53:40.3348559Z Checking job knob settings.
+2024-07-16T05:53:40.3364235Z    Knob: AgentToolsDirectory = C:\hostedtoolcache\windows Source: ${AGENT_TOOLSDIRECTORY} 
+2024-07-16T05:53:40.3366363Z    Knob: UseGitLongPaths = true Source: $(USE_GIT_LONG_PATHS) 
+2024-07-16T05:53:40.3367738Z    Knob: AgentPerflog = c:\vsts\perflog Source: ${VSTS_AGENT_PERFLOG} 
+2024-07-16T05:53:40.3370404Z    Knob: AgentEnablePipelineArtifactLargeChunkSize = true Source: $(AGENT_ENABLE_PIPELINEARTIFACT_LARGE_CHUNK_SIZE) 
+2024-07-16T05:53:40.3373367Z    Knob: ProcessHandlerSecureArguments = false Source: $(AZP_75787_ENABLE_NEW_LOGIC) 
+2024-07-16T05:53:40.3373830Z    Knob: ProcessHandlerSecureArguments = false Source: $(AZP_75787_ENABLE_NEW_LOGIC_LOG) 
+2024-07-16T05:53:40.3374269Z    Knob: ProcessHandlerTelemetry = true Source: $(AZP_75787_ENABLE_COLLECT) 
+2024-07-16T05:53:40.3374844Z    Knob: ProcessHandlerEnableNewLogic = true Source: $(AZP_75787_ENABLE_NEW_PH_LOGIC) 
+2024-07-16T05:53:40.3376475Z    Knob: CheckForTaskDeprecation = true Source: $(AZP_AGENT_CHECK_FOR_TASK_DEPRECATION) 
+2024-07-16T05:53:40.3376988Z    Knob: MountWorkspace = false Source: $(AZP_AGENT_MOUNT_WORKSPACE) 
+2024-07-16T05:53:40.3377726Z    Knob: LogTaskNameInUserAgent = true Source: $(AZP_AGENT_LOG_TASKNAME_IN_USERAGENT) 
+2024-07-16T05:53:40.3378536Z Finished checking job knob settings.
+2024-07-16T05:53:40.3764394Z Start tracking orphan processes.
+2024-07-16T05:53:40.3839443Z ##[section]Finishing: Initialize job
